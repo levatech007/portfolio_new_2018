@@ -42,7 +42,9 @@ body {
 }
 
 .menu-selection li {
-  display: block;
+  float: left;
+  padding: 18px 30px;
+  color: #999999;
 }
 
 .menu-selection {
@@ -50,4 +52,16 @@ body {
   right: 70px;
   top: 40px;
   color: #FFFFFF;
+  -webkit-animation: 4s ease 0s normal forwards 1 fadein;
+    animation: 4s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein{
+  from { opacity:0 }
+  to { opacity:1 }
+}
+
+@-webkit-keyframes fadein{
+  from { opacity:0 }
+  to { opacity:1 }
 }
