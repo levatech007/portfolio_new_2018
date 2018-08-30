@@ -30,7 +30,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.height)
     return (
       <div className="container-fluid">
           <Header />

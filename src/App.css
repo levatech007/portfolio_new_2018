@@ -72,3 +72,12 @@ body {
   background-color: #999999;
   margin: 50px 0;
 }
+
+.small {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.main-content {
+  margin-bottom: 100px;
+}
