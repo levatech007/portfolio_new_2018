@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Header from "./components/Header.js";
 import Hero from "./components/Hero.js";
+import MainContent from "./components/MainContent.js";
 import Footer from "./components/Footer.js";
 
 class App extends Component {
@@ -34,6 +35,7 @@ class App extends Component {
       <div className="container-fluid">
           <Header />
           {this.state.height && <Hero  windowHeight={ this.state.height }/> }
+          <MainContent />
           <Footer />
       </div>
     )
