@@ -4,7 +4,7 @@ import PopupMenu from "./PopupMenu.js";
 class Header extends Component {
   render() {
     return(
-      <div className="d-flex flex-row-reverse bd-highlight">
+      <div>
         <PopupMenu />
       </div>
     )

@@ -5,6 +5,7 @@ class MenuSelection extends Component {
     super();
     this.state = {
       closed: true,
+      menuItems: ["About", "Work", "Contact"],
     }
     this.onMenuClick = this.onMenuClick.bind(this);
   }
@@ -17,9 +18,13 @@ class MenuSelection extends Component {
     return(
       <div className="menu-selection">
         <ul>
-          <li onClick={ this.onMenuClick }>About</li>
-          <li onClick={ this.onMenuClick }>Work</li>
-          <li onClick={ this.onMenuClick }>Contact</li>
+          {
+            this.state.menuItems.map((item, idx) => {
+              return(
+                <li onClick={ this.onMenuClick }>{ item }</li>
+              )
+            })
+          }
         </ul>
       </div>
     )
