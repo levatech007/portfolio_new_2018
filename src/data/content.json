@@ -1,7 +1,15 @@
 {
   "about": {
-      "title": "Highly motivated and creative web developer with a background in fashion design and commerce.",
+      "title": "Web developer with a background in fashion design and commerce.",
       "p1": "Born and raised in Tallinn, Estonia, I’ve lived in the San Francisco Bay Area for 16 years. After receiving my BFA in fashion design, life took me on a path towards graphic design and commerce. I started out as a self-taught programmer with the help of online classes while working full time co-leading a retail store. It was coding that kept me engaged and challenged. I decided to take the risk to make a career change and attend General Assembly’s full-time Web Development program.",
       "p2": "When I am not coding, you can find me either curled up on the couch reading a book, or at Bayfront Park plane spotting, marveling at the physics in motion. I also love to travel and my list of places to visit extends from here to the moon."
+  },
+  "description": {
+    "title": "I love being a web developer because it pushes the boundaries of my knowledge, it tests my determination but most of all, it lets me be a part of the future.",
+    "p1": "I specialize in backend development and APIs. I enjoy working with Ruby, Rails, JavaScript, Node, and React. Problem solving and writing algorithms for server side applications is my favorite kind of coding. I love building React application structures, APIs that require data manipulation and the logic of data flow between separate front and back end applications.",
+    "p2": "I also love learning and I’ve found programming to be a never-ending learning process. That is why I love taking on projects that I know will be a challenge. My motivation is only fueled by the unknown."
+  },
+  "technologies": {
+
   }
 }

@@ -36,9 +36,10 @@ class Hero extends Component {
     return(
        <div className="container main-content">
         <div className="jumbotron" id="heroText" style={ this.state.style }>
-            <h1 className="display-4">Eva-Liisa Galen</h1>
+            <h1 className="display-1" id="name">Eva-Liisa Galen</h1>
+            {/* <div className="pattern-line"></div> */}
             <hr></hr>
-            <p className="lead">Web Developer</p>
+            <p className="display-4">Web Developer</p>
         </div>
       </div>
     )

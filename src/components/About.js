@@ -12,22 +12,35 @@ class About extends Component {
 
   componentDidMount() {
     this.setState({
-      data: Content.about
+      data: Content
     })
   }
 
   render() {
     return(
-      <div className="container main-content">
-        <div className="row">
+      <div className="container">
+        <div className="row main-content">
+          { this.state.data.description &&
+            <div className="col-md-6">
+              <p>{ this.state.data.description.title }</p>
+              <p>{ this.state.data.description.p1 }</p>
+              <p>{ this.state.data.description.p2 }</p>
+            </div>
+          }
           <div className="col-md-6">
-            <img src={ Portrait } />
           </div>
+        </div>
+        <div className="row main-content">
           <div className="col-md-6">
-            <h2>{ this.state.data.title }</h2>
-            <p>{ this.state.data.p1 }</p>
-            <p>{ this.state.data.p2 }</p>
+            <img src={ Portrait } alt="portrait"/>
           </div>
+          { this.state.data.about &&
+            <div className="col-md-6">
+              <h2>{ this.state.data.about.title }</h2>
+              <p>{ this.state.data.about.p1 }</p>
+              <p>{ this.state.data.about.p2 }</p>
+            </div>
+          }
         </div>
       </div>
     )

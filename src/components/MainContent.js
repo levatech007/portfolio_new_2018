@@ -4,7 +4,7 @@ import About from "./About.js";
 class MainContent extends Component {
   render() {
     return(
-      <div>Main
+      <div>
       <About />
     </div>
     )

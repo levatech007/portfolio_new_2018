@@ -21,7 +21,7 @@ class MenuSelection extends Component {
           {
             this.state.menuItems.map((item, idx) => {
               return(
-                <li onClick={ this.onMenuClick }>{ item }</li>
+                <li onClick={ this.onMenuClick } key={ idx }>{ item }</li>
               )
             })
           }

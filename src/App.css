@@ -58,6 +58,27 @@ body {
     animation: 3s ease 0s normal fadein;
 }
 
+#heroText hr {
+  background-color: #999999;
+  margin: 50px 0;
+}
+
+#heroText {
+  -webkit-animation: 5s ease-out 0s normal tracking-in-expand;
+    animation: 5s ease-out 0s normal tracking-in-expand;
+}
+
+.small {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.main-content {
+  margin-bottom: 100px;
+}
+
+/* ANIMATIONS */
+
 @keyframes fadein{
   from { opacity:0 }
   to { opacity:1 }
@@ -68,16 +89,7 @@ body {
   to { opacity:1 }
 }
 
-.jumbotron hr {
-  background-color: #999999;
-  margin: 50px 0;
-}
-
-.small {
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-
-.main-content {
-  margin-bottom: 100px;
+@-webkit-keyframes tracking-in-expand {
+  0%{letter-spacing:-.5em;opacity:0}
+  60%{opacity:.6}100%{opacity:1}
 }
