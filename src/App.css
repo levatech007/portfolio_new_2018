@@ -58,12 +58,19 @@ body {
     animation: 3s ease 0s normal fadein;
 }
 
+.jumbotron {
+  background-image: url("images/computer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 #heroText hr {
-  background-color: #999999;
-  margin: 50px 0;
+  margin: 80px 0;
 }
 
 #heroText {
+  background-color: #000000;
   -webkit-animation: 5s ease-out 0s normal tracking-in-expand;
     animation: 5s ease-out 0s normal tracking-in-expand;
 }

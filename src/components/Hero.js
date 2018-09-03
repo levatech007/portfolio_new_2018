@@ -9,7 +9,6 @@ class Hero extends Component {
       style: {
         margin: "",
         textAlign: "center",
-        background: "none",
       }
     }
   }
@@ -25,23 +24,19 @@ class Hero extends Component {
       style: {
         margin: margin + "px 0px",
         textAlign: "center",
-        background: "none",
       }
     })
   }
 
-
-
   render() {
     return(
-       <div className="container main-content">
-        <div className="jumbotron" id="heroText" style={ this.state.style }>
-            <h1 className="display-1" id="name">Eva-Liisa Galen</h1>
-            {/* <div className="pattern-line"></div> */}
+        <div className="jumbotron jumbotron-fluid" id="heroText" style={ this.state.style }>
+          <div className="container">
+            <h1 className="display-1">Eva-Liisa Galen</h1>
             <hr></hr>
             <p className="display-4">Web Developer</p>
+          </div>
         </div>
-      </div>
     )
   }
 }

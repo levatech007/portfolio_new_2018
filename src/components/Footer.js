@@ -8,7 +8,7 @@ class Footer extends Component {
     return(
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-md-3">
+          <div className="col-md-4">
             <div className="row justify-content-center">
               <div className="col-md-3"><img src={ Github } alt="github" /></div>
               <div className="col-md-3"><img src={ Linkedin } alt="linkedin" /></div>
