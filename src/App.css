@@ -4,6 +4,10 @@ body {
   color: #999999;
 }
 
+li {
+    list-style: none;
+}
+
 .popup-menu,
 .popup-menu.open {
   display: inline-block;
@@ -63,6 +67,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.fade-in {
+  -webkit-animation: 3s ease 0s normal fadein;
+    animation: 3s ease 0s normal fadein;
 }
 
 #heroText hr {

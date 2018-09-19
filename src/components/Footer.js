@@ -10,9 +10,9 @@ class Footer extends Component {
         <div className="row justify-content-center">
           <div className="col-md-4">
             <div className="row justify-content-center">
-              <div className="col-md-3"><img src={ Github } alt="github" /></div>
-              <div className="col-md-3"><img src={ Linkedin } alt="linkedin" /></div>
-              <div className="col-md-3"><img src={ Email } alt="email" /></div>
+              <div className="col-md-2"><img src={ Github } alt="github" /></div>
+              <div className="col-md-2"><img src={ Linkedin } alt="linkedin" /></div>
+              <div className="col-md-2"><img src={ Email } alt="email" /></div>
             </div>
           </div>
         </div>

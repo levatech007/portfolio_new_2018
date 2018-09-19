@@ -19,16 +19,44 @@ class About extends Component {
   render() {
     return(
       <div className="container">
-        <div className="row main-content">
+        <div className="row main-content fade-in">
           { this.state.data.description &&
-            <div className="col-md-6">
-              <p>{ this.state.data.description.title }</p>
-              <p>{ this.state.data.description.p1 }</p>
-              <p>{ this.state.data.description.p2 }</p>
+            <div className="row">
+              <div className="col-md-6">
+                <p>{ this.state.data.description.title }</p>
+                <p>{ this.state.data.description.p1 }</p>
+                <p>{ this.state.data.description.p2 }</p>
+              </div>
             </div>
           }
-          <div className="col-md-6">
+          { this.state.data.technologies &&
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="row">
+                  {
+                    this.state.data.technologies.map((item, idx) => {
+                      return(
+                        <div className="col-sm-2" key={ idx }>
+                          <ul>
+                          <h4>{ item.title }</h4>
+                          {
+                            item.content.map((list, idx) => {
+                              return(
+                                <li key={ idx }>{ list }</li>
+                              )
+                            })
+                          }
+                        </ul>
+                      </div>
+
+
+                      )
+                    })
+                  }
+                </div>
+            </div>
           </div>
+        }
         </div>
         <div className="row main-content">
           <div className="col-md-6">

@@ -9,14 +9,30 @@
     "p1": "I specialize in backend development and APIs. I enjoy working with Ruby, Rails, JavaScript, Node, and React. Problem solving and writing algorithms for server side applications is my favorite kind of coding. I love building React application structures, APIs that require data manipulation and the logic of data flow between separate front and back end applications.",
     "p2": "I also love learning and I’ve found programming to be a never-ending learning process. That is why I love taking on projects that I know will be a challenge. My motivation is only fueled by the unknown."
   },
-  "technologies":
+  "technologies": [
     {
-      "Languages": ["JavaScript/ES6", "Ruby", "Python", "HTML", "CSS/SCSS"],
-      "Frameworks": ["React", "Node", "Express", "Ruby on Rails", "Django"],
-      "Databases": ["MongoDB", "PostgreSQL", "SQLite"],
-      "Technologies": ["Mongoose", "ActiveRecord", "Sequelize"],
-      "Libraries": ["jQuery", "Bootstrap"],
-      "Other": ["Git", "Bash", "Rest API", "Redis", "Rack", "JSON"]
+      "title": "Languages",
+      "content": ["JavaScript/ES6", "Ruby", "Python", "HTML", "CSS/SCSS"]
+    },
+    {
+      "title": "Frameworks",
+      "content":["React", "Node", "Express", "Ruby on Rails", "Django"]
+    },
+    {
+      "title": "Databases",
+      "content": ["MongoDB", "PostgreSQL", "SQLite"]
+    },
+    {
+      "title": "Technologies",
+      "content": ["Mongoose", "ActiveRecord", "Sequelize"]
+    },
+    {
+      "title": "Libraries",
+      "content": ["jQuery", "Bootstrap"]
+    },
+    {
+      "title": "Other",
+      "content": ["Git", "Bash", "Rest API", "Redis", "Rack", "JSON"]
     }
-
+  ]
 }

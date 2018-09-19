@@ -6,6 +6,7 @@ class MainContent extends Component {
   render() {
     return(
       <div>
+
       <About />
       <Contact />
     </div>
