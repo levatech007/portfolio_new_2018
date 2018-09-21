@@ -13,12 +13,20 @@ class Contact extends Component {
       recaptchaResponse: "",
       alerts: false,
       submitted: false,
+      displayForm: false,
     }
+    this.onShowContactForm = this.onShowContactForm.bind(this);
     this.onNameInputChange = this.onNameInputChange.bind(this);
     this.onEmailInputChange = this.onEmailInputChange.bind(this);
     this.onNoteInputChange = this.onNoteInputChange.bind(this);
     this.onFormSubmit= this.onFormSubmit.bind(this);
     this.onChange = this.onChange.bind(this);
+  }
+
+  onShowContactForm() {
+    this.setState({
+      displayForm: true,
+    })
   }
 
   onNameInputChange(e) {
@@ -89,6 +97,7 @@ class Contact extends Component {
   render() {
     return(
       <div className="row justify-content-center main-content">
+        { this.state.displayForm ?
         <div className="col-md-6">
           <form onSubmit={ this.onFormSubmit } className="forms">
             <div className="form-group row">
@@ -140,6 +149,9 @@ class Contact extends Component {
             </div>
           </form>
         </div>
+        :
+        <button type="button" className="container btn btn-secondary btn-lg btn-block" onClick={ this.onShowContactForm }>Contact me</button>
+      }
       </div>
     )
   }
